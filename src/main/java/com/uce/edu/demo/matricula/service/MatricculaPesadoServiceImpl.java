@@ -7,24 +7,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Qualifier("pesado")
-public class MatricculaPesadoServiceImpl implements IMatriculaService{
+public  class MatricculaPesadoServiceImpl implements IMatriculaService{
 
 	@Override
-	public BigDecimal calcularValor(BigDecimal valorMatricula, BigDecimal precio) {
+	public BigDecimal calcularValor(BigDecimal precio) {
 		// TODO Auto-generated method stub
-		
 		BigDecimal valor = precio.multiply(new BigDecimal(15).divide(new BigDecimal(100)));
-
-	
-				
-				
+		
 		return valor;
+	}  
 	
-	}
-
-	
-	
-	
+   
+    
 
 
 

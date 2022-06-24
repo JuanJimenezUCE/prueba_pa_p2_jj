@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public interface IMatriculaService {
 
-	public BigDecimal calcularValor(BigDecimal valorMatricula, BigDecimal precio );
-	
+	public BigDecimal calcularValor(BigDecimal precio );
 
+	
 	
 }

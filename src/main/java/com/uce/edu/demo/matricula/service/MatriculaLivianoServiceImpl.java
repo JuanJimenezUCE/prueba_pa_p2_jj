@@ -9,17 +9,15 @@ import org.springframework.stereotype.Service;
 public class MatriculaLivianoServiceImpl implements IMatriculaService{
 
 	@Override
-	public BigDecimal calcularValor(BigDecimal valorMatricula, BigDecimal precio) {
+	public BigDecimal calcularValor(BigDecimal precio) {
 		// TODO Auto-generated method stub
-		
-		
-		BigDecimal valor = precio.multiply(new BigDecimal(15).divide(new BigDecimal(100)));
+		BigDecimal valor = precio.multiply(new BigDecimal(10).divide(new BigDecimal(100)));
 		return valor;
 	}
-
+	
 	
 
-
+	
 
 
 

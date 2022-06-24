@@ -6,5 +6,5 @@ public interface IPropietarioService {
 
 	public void ingresar(Propietario p );
 	
-	public void borrar(Propietario p );
+	public void borrar(String cedula );
 }

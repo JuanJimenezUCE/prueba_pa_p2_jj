@@ -1,5 +1,7 @@
 package com.uce.edu.demo.matricula.repository;
 
+import java.math.BigDecimal;
+
 import org.springframework.stereotype.Repository;
 
 import com.uce.edu.demo.matricula.modelo.Vehiculo;
@@ -23,14 +25,17 @@ public class VehiculoRepositoryImpl implements IVehiculoRepository {
 		// TODO Auto-generated method stub
 		System.out.println("Se ha buscado en la base de datos: " +placa);
 		Vehiculo v =new Vehiculo();
+		v.setMarca("KIA");
+		v.setTipo("L");
 		v.setPlaca(placa);
+		v.setPrecio(new BigDecimal(30000));
 		return v;
 	}
 
 	@Override
-	public void eliminar(String precio) {
+	public void eliminar(String placa) {
 		// TODO Auto-generated method stub
-		System.out.println("Se elimino el precio del vehiculo: "+precio);
+		System.out.println("Se elimino la placa del vehiculo: "+placa);
 	}
 
 }

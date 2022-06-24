@@ -11,7 +11,7 @@ public interface IVehiculoRepository {
 	public Vehiculo buscar(String placa);
 	
 	
-	public void eliminar(String precio);
+	public void eliminar(String placa);
 	
 	
 }
